@@ -5,18 +5,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>منصة ملازمي التعليمية</title>
     <style>
-        body { font-family: Arial, sans-serif; background-color: #f4f7f6; text-align: center; padding: 50px; }
-        .container { background: white; padding: 30px; border-radius: 10px; box-shadow: 0px 4px 10px rgba(0,0,0,0.1); display: inline-block; }
-        h1 { color: #2c3e50; }
-        p { color: #555; }
-        .btn { display: inline-block; margin-top: 20px; padding: 10px 20px; background: #27ae60; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; }
+        body {
+            font-family: Tahoma, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 25px;
+        }
+        .btn-telegram {
+            display: inline-block;
+            background-color: #24a1de;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            transition: background 0.3s;
+        }
+        .btn-telegram:hover {
+            background-color: #2090c7;
+        }
+        hr {
+            border: 0;
+            border-top: 1px solid #eee;
+            margin: 30px 0;
+        }
+        h2 {
+            color: #34495e;
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+        .table-container {
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+        }
+        th {
+            background-color: #f8f9fa;
+            color: #2c3e50;
+        }
+        .btn-download {
+            background-color: #27ae60;
+            color: white;
+            padding: 6px 15px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .btn-download:hover {
+            background-color: #219653;
+        }
     </style>
 </head>
 <body>
+
     <div class="container">
         <h1>مرحباً بكم في منصة ملازمي</h1>
-        <p>منصتك الأولى لتحميل الملازم الدراسية بكل سهولة.</p>
-        <a href="https://t.me/" class="btn" target="_blank">انضم لقناة التلجرام</a>
+        <p>منصتك الأولى لتحميل الملازم الدراسية بكل سهولة</p>
+        
+        <a href="https://t.me/YOUR_CHANNEL" class="btn-telegram" target="_blank">انضم لقناة التلجرام</a>
+
+        <hr>
+
+        <h2>قائمة الملازم الدراسية</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>المرحلة / الفرع</th>
+                        <th>المادة</th>
+                        <th>التحميل</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>الثالث المتوسط</td>
+                        <td>الرياضيات</td>
+                        <td><a href="#" class="btn-download">تحميل PDF</a></td>
+                    </tr>
+                    <tr>
+                        <td>الثالث المتوسط</td>
+                        <td>الفيزياء</td>
+                        <td><a href="#" class="btn-download">تحميل PDF</a></td>
+                    </tr>
+                    <tr>
+                        <td>الفرع المهني (حاسوب)</td>
+                        <td>تجميع وصيانة الحاسوب</td>
+                        <td><a href="#" class="btn-download">تحميل PDF</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
+
 </body>
 </html>
