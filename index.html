@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>منصة ملازمي التعليمية</title>
+    <title>منصة ملازمي التعليمية - المراجعة المركزة في الكيمياء</title>
     <style>
         body {
             font-family: Tahoma, sans-serif;
@@ -14,114 +14,82 @@
             text-align: center;
         }
         .container {
-            max-width: 800px;
+            max-width: 700px;
             margin: 0 auto;
             background: #ffffff;
             padding: 30px;
             border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
         }
         h1 {
             color: #2c3e50;
+            font-size: 24px;
             margin-bottom: 10px;
         }
-        p {
-            color: #666;
-            font-size: 16px;
-            margin-bottom: 25px;
-        }
-        .btn-telegram {
+        .badge {
             display: inline-block;
-            background-color: #24a1de;
+            background-color: #e67e22;
             color: white;
-            padding: 12px 25px;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .book-info {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            text-align: right;
+            border-right: 4px solid #2980b9;
+        }
+        .book-info p {
+            margin: 8px 0;
+            font-size: 15px;
+            color: #555;
+        }
+        .buttons-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 20px;
+        }
+        .btn {
+            display: block;
+            padding: 12px 20px;
             text-decoration: none;
             border-radius: 6px;
             font-weight: bold;
-            margin-bottom: 30px;
-            transition: background 0.3s;
-        }
-        .btn-telegram:hover {
-            background-color: #2090c7;
-        }
-        hr {
-            border: 0;
-            border-top: 1px solid #eee;
-            margin: 30px 0;
-        }
-        h2 {
-            color: #34495e;
-            font-size: 22px;
-            margin-bottom: 20px;
-        }
-        .table-container {
-            overflow-x: auto;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 10px;
-        }
-        th, td {
-            padding: 12px 15px;
-            border-bottom: 1px solid #ddd;
-            text-align: center;
-        }
-        th {
-            background-color: #f8f9fa;
-            color: #2c3e50;
-        }
-        .btn-download {
-            background-color: #27ae60;
+            font-size: 16px;
             color: white;
-            padding: 6px 15px;
-            border-radius: 4px;
-            text-decoration: none;
-            font-size: 14px;
+            transition: opacity 0.2s;
         }
-        .btn-download:hover {
-            background-color: #219653;
+        .btn:hover {
+            opacity: 0.9;
         }
+        .btn-download { background-color: #27ae60; }
+        .btn-telegram { background-color: #24a1de; }
+        .btn-whatsapp { background-color: #25d366; }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>مرحباً بكم في منصة ملازمي</h1>
-        <p>منصتك الأولى لتحميل الملازم الدراسية بكل سهولة</p>
-        
-        <a href="https://t.me/YOUR_CHANNEL" class="btn-telegram" target="_blank">انضم لقناة التلجرام</a>
+        <span class="badge">إصدار 2026</span>
+        <h1>المراجعة المركزة في الكيمياء</h1>
+        <p>للثالث المتوسط - الأستاذ حسين حمزة</p>
 
-        <hr>
+        <div class="book-info">
+            <p><strong>المادة:</strong> الكيمياء</p>
+            <p><strong>المرحلة:</strong> الثالث المتوسط</p>
+            <p><strong>الأستاذ:</strong> حسين حمزة</p>
+            <p><strong>محتوى الملزمة:</strong> ملخص الفصول، الأسئلة الوزارية، والاجوبة النموذجية.</p>
+        </div>
 
-        <h2>قائمة الملازم الدراسية</h2>
-        <div class="table-container">
-            <table>
-                <thead>
-                    <tr>
-                        <th>المرحلة / الفرع</th>
-                        <th>المادة</th>
-                        <th>التحميل</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>الثالث المتوسط</td>
-                        <td>الرياضيات</td>
-                        <td><a href="#" class="btn-download">تحميل PDF</a></td>
-                    </tr>
-                    <tr>
-                        <td>الثالث المتوسط</td>
-                        <td>الفيزياء</td>
-                        <td><a href="#" class="btn-download">تحميل PDF</a></td>
-                    </tr>
-                    <tr>
-                        <td>الفرع المهني (حاسوب)</td>
-                        <td>تجميع وصيانة الحاسوب</td>
-                        <td><a href="#" class="btn-download">تحميل PDF</a></td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="buttons-grid">
+            <a href="#" class="btn btn-download">تحميل الملزمة (PDF)</a>
+            <a href="https://t.me/YOUR_BOT_USERNAME" class="btn btn-telegram" target="_blank">طلب وتحميل عبر التليجرام</a>
+            <a href="https://wa.me/YOUR_PHONE_NUMBER" class="btn btn-whatsapp" target="_blank">شراء / استفسار عبر الواتساب</a>
         </div>
     </div>
 
